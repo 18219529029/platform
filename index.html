@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java教学云平台</title>
+    <link rel="stylesheet" href="css/logo.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-header">
+        <div id="header-tobar">
+          <div class="tobar">
+            <div class="logo">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+            </div>
+            <div class="right-text">
+              <button class="el-button button-text" type="button">
+                <span>中文</span>
+              </button>
+              <button class="el-button button-text" type="button">
+                <span>登录/注册</span>
+              </button>
+            </div>
+            <!--移动端 搜索-->
+            <div class="app-moblie-input">
+              <div class="nav-input">
+                <input
+                  class="el-input__inner"
+                  autofocus=""
+                  type="text"
+                  autocomplete="off"
+                  placeholder="请输入要搜索的资源~"
+                />
+                <i class="el-icon el-input__icon">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m795.904 750.72 124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704 352 352 0 0 0 0 704z"
+                    ></path>
+                  </svg>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner 导航 -->
+      <div class="header-nav">
+        <img
+          src="http://106.55.181.102/vite-cloudPlatform-app/assets/banner.aafc6f42.jpeg"
+          class="banner"
+        />
+        <!-- 移动端底部 -->
+        <div class="nav-footer-mobile">
+          <div class="menu">
+            <div class="el-menu-item-own" index="Home">
+              <img
+                src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%88%BF%E5%AD%901.16ce5413.png"
+                alt="首页"
+                class="icon"
+              />
+              <div style="color: red">首页</div>
+            </div>
+            <div class="el-menu-item-own" index="CourseOutline">
+              <img
+                src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E8%AE%BA%E5%9D%9B2.29a0b292.png"
+                alt="论坛"
+                class="icon"
+              />
+              <div style="color: black">论坛</div>
+            </div>
+            <div class="el-menu-item-own" index="ClientSourceDownload">
+              <img
+                src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E8%B5%84%E6%BA%902.9039fb21.png"
+                alt="资源"
+                class="icon"
+              />
+              <div style="color: black">资源</div>
+            </div>
+            <div class="el-menu-item-own" index="OnlineHomework">
+              <img
+                src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E4%BD%9C%E4%B8%9A2.699dad86.png"
+                alt="作业"
+                class="icon"
+              />
+              <div style="color: black">作业</div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-box">
+          <ul>
+            <li class="item is-active">首页</li>
+            <li class="item">交流论坛</li>
+            <li class="item">课堂资源</li>
+            <li class="item">在线作业</li>
+          </ul>
+          <div id="el-input">
+            <div class="el-wrapper">
+              <input
+                class="el-input__inner"
+                autofocus=""
+                type="text"
+                autocomplete="off"
+                placeholder="请输入要搜索的资源~"
+              />
+              <span class="el-input__suffix">
+                <span class="el-input__suffix-inner">
+                  <i class="el-icon el-input__icon"
+                    ><svg
+                      viewBox="0 0 1024 1024"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m795.904 750.72 124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704 352 352 0 0 0 0 704z"
+                      ></path>
+                    </svg> </i
+                ></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-web">
+        <!-- 课程简介 -->
+        <div class="course-introduction el-card">
+          <div class="card-header">
+            <div class="title">
+              <img
+                src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E8%AF%BE%E7%A8%8B.d7b6451f.png"
+                class="icon"
+                alt="课程简介icon"
+              />
+              <span>课堂简介</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="main-content">
+              <p>
+                《Java应用程序开发》是信通学院人工智能技术应用专业应用开发培养路线的一门核
+                心专业课程，是一体化课程体系的一个重要环节。
+              </p>
+              <p>
+                这门课程在整个专业课程体系中承上启下，对于让学生真正掌握软件编程技术来说
+                至关重要。整个学习内容由4个企业小项目组成，培养学生掌握多线程设计、GU设计
+                、网络编程、数据库编程等核心岗位能力，项目实施的过程与企业软件开发过程。一
+                致，培养学生核心职业素养和工匠精神。
+              </p>
+            </div>
+            <img
+              src="	http://106.55.181.102/vite-cloudPlatform-app/assets/java.9df31765.jpeg
+          "
+              alt=""
+            />
+          </div>
+        </div>
+        <!--  -->
+        <div class="main">
+          <!-- 课程内容 左 -->
+          <div class="course-content el-card">
+            <div class="card-header">
+              <div class="title title-line">
+                <img
+                  src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E4%B9%A6.63ac8499.png"
+                  class="icon"
+                  alt="课程内容icon"
+                />
+                <span>课程内容</span>
+              </div>
+            </div>
+            <div class="left-card-body">
+              <div class="left-main">
+                <div>
+                  <div class="left-box">
+                    <ul>
+                      <div class="ul-title">任务一 技能节报名小程序</div>
+                      <li><span>子任务1.1</span></li>
+                      <li><span>子任务1.1</span></li>
+                      <li><span>子任务1.1</span></li>
+                    </ul>
+                    <img
+                      src="	http://106.55.181.102/vite-cloudPlatform-app/assets/1.2521d270.png"
+                      alt="1.jpg"
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务二 开发小游戏</div>
+                      <li><span>子任务2.1实现游戏界面</span></li>
+                      <li><span>子任务2.3绘制面板</span></li>
+                      <li><span>子任务2.4设计和实现线程</span></li>
+                      <li><span>子任务2.5游戏开发与调试</span></li>
+                    </ul>
+                    <img
+                      src="		http://106.55.181.102/vite-cloudPlatform-app/assets/2.cd5a0d87.png"
+                      alt="2.jpg"
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务三 开发天气预报小程序</div>
+                      <li><span>子任务3.1实现界面</span></li>
+                      <li><span>子任务3.2下载网络数据</span></li>
+                      <li><span>子任务3.3解析Json数据</span></li>
+                      <li><span>子任务3.4实现天气查询</span></li>
+                    </ul>
+                    <img
+                      src="			http://106.55.181.102/vite-cloudPlatform-app/assets/3.b8dc86c8.png"
+                      alt="3.jpg"
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务四 开发通讯录管理系统</div>
+                      <li><span>子任务4.1实现界面</span></li>
+                      <li><span>子任务4.2使用JDBC处理数据库数据</span></li>
+                      <li><span>子任务4.3设计类图</span></li>
+                      <li><span>子任务4.4项目综合实施与调试</span></li>
+                    </ul>
+                    <img
+                      src="	http://106.55.181.102/vite-cloudPlatform-app/assets/4.f33ec627.png"
+                      alt="4.jpg"
+                    />
+                  </div>
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="right">
+            <div class="teacher el-card">
+              <div class="card-header">
+                <div class="title">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%95%99%E5%B8%88.5014b323.png"
+                    class="icon"
+                    alt="课程内容icon"
+                  />
+                  <span>授课教师</span>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%AD%9F.502b26ad.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>孟洁</p>
+                    <p class="red">课程负责人</p>
+                    <p>副教授 本科</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="		http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%91%A8.c1b8ec74.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>周兵</p>
+                    <p>讲师</p>
+                    <p>本科</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E9%99%88.c8cf9fa2.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>陈昀</p>
+                    <p>副教授</p>
+                    <p>硕士研究生</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="		http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%B7%A6.2828982a.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>左海威</p>
+                    <p>讲师</p>
+                    <p>硕士研究生</p>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+            <!--  -->
+            <div class="course el-card">
+              <div class="card-header">
+                <div class="title">
+                  <i class="el-icon" style="font-size: 30px; color: #ec1525">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m199.04 672.64 193.984 112 224-387.968-193.92-112-224 388.032zm-23.872 60.16 32.896 148.288 144.896-45.696L175.168 732.8zM455.04 229.248l193.92 112 56.704-98.112-193.984-112-56.64 98.112zM104.32 708.8l384-665.024 304.768 175.936L409.152 884.8h.064l-248.448 78.336L104.32 708.8zm384 254.272v-64h448v64h-448z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span>课程概要</span>
+                </div>
+              </div>
+              <div class="card-main">
+                <div class="course-card-body">
+                  <img
+                    src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%8E%88%E8%AF%BE%E8%AE%A1%E5%88%92.a230f8b2.jpg"
+                    alt="授课计划"
+                  />
+                  <p>授课计划</p>
+                </div>
+                <div class="course-card-body">
+                  <img
+                    src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%95%99%E5%AD%A6%E6%9D%A1%E4%BB%B6.0489dcf1.jpg"
+                    alt="教学条件"
+                  />
+                  <p>教学条件</p>
+                </div>
+                <div class="course-card-body">
+                  <img
+                    src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%95%99%E5%AD%A6%E7%8E%AF%E5%A2%83.55ca6a2d.jpg"
+                    alt="教学环境"
+                  />
+                  <p>教学环境</p>
+                </div>
+                <div class="course-card-body">
+                  <img
+                    src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C.bdc5572a.jpg"
+                    alt="校企合作"
+                  />
+                  <p>校企合作</p>
+                </div>
+                <div class="course-card-body">
+                  <img
+                    src="http://106.55.181.102/vite-cloudPlatform-app/assets/%E8%B5%84%E6%BA%90%E5%BB%BA%E8%AE%BE.a728ee57.jpg"
+                    alt="资源建设"
+                  />
+                  <p>资源建设</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-mobile">
+        <div class="wrapper">
+          <input type="radio" name="gender" id="bro1" />
+          <label for="bro1">简介</label>
+          <div class="div-main">
+            <p>简介</p>
+            <p>
+              《Java应用程序开发》是信通学院人工智能技术应用专业应用开发培养路线的一门核
+              心专业课程，是一体化课程体系的一个重要环节。
+            </p>
+            <p>
+              这门课程在整个专业课程体系中承上启下，对于让学生真正掌握软件编程技术来说
+              至关重要。整个学习内容由4个企业小项目组成，培养学生掌握多线程设计、GU设计
+              、网络编程、数据库编程等核心岗位能力，项目实施的过程与企业软件开发过程。一
+              致，培养学生核心职业素养和工匠精神。
+            </p>
+          </div>
+          <input type="radio" name="gender" id="bro2" checked />
+          <label for="bro2">课程内容</label>
+          <div class="div-main course-content">
+            <div class="left-card-body">
+              <div class="left-main mt-5">
+                <div>
+                  <div class="left-box">
+                    <ul>
+                      <div class="ul-title">任务一 技能节报名小程序</div>
+                      <li><span>子任务1.1</span></li>
+                      <li><span>子任务1.1</span></li>
+                      <li><span>子任务1.1</span></li>
+                    </ul>
+                    <img
+                      src="	http://106.55.181.102/vite-cloudPlatform-app/assets/1.2521d270.png"
+                      alt=""
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务二 开发小游戏</div>
+                      <li><span>子任务2.1实现游戏界面</span></li>
+                      <li><span>子任务2.3绘制面板</span></li>
+                      <li><span>子任务2.4设计和实现线程</span></li>
+                      <li><span>子任务2.5游戏开发与调试</span></li>
+                    </ul>
+                    <img
+                      src="http://106.55.181.102/vite-cloudPlatform-app/assets/2.cd5a0d87.png"
+                      alt=""
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务三 开发天气预报小程序</div>
+                      <li><span>子任务3.1实现界面</span></li>
+                      <li><span>子任务3.2下载网络数据</span></li>
+                      <li><span>子任务3.3解析Json数据</span></li>
+                      <li><span>子任务3.4实现天气查询</span></li>
+                    </ul>
+                    <img
+                      src="	http://106.55.181.102/vite-cloudPlatform-app/assets/3.b8dc86c8.png"
+                      alt=""
+                    />
+                  </div>
+                  <hr />
+                </div>
+                <div>
+                  <div class="left-box mt-5">
+                    <ul>
+                      <div class="ul-title">任务四 开发通讯录管理系统</div>
+                      <li><span>子任务4.1实现界面</span></li>
+                      <li><span>子任务4.2使用JDBC处理数据库数据</span></li>
+                      <li><span>子任务4.3设计类图</span></li>
+                      <li><span>子任务4.4项目综合实施与调试</span></li>
+                    </ul>
+                    <img
+                      src="http://106.55.181.102/vite-cloudPlatform-app/assets/4.f33ec627.png"
+                      alt=""
+                    />
+                  </div>
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <input type="radio" name="gender" id="bro3" />
+          <label for="bro3">授课教师</label>
+          <div class="div-main">
+            <div class="teacher mt-5">
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%AD%9F.502b26ad.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>孟洁</p>
+                    <p class="red">课程负责人</p>
+                    <p>副教授 本科</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%91%A8.c1b8ec74.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>周兵</p>
+                    <p>讲师</p>
+                    <p>本科</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E9%99%88.c8cf9fa2.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>陈昀</p>
+                    <p>副教授</p>
+                    <p>硕士研究生</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pd0 card-body">
+                <div class="teacher-box">
+                  <img
+                    src="	http://106.55.181.102/vite-cloudPlatform-app/assets/%E5%B7%A6.2828982a.jpg
+                "
+                    alt=""
+                  />
+                  <div class="content">
+                    <p>左海威</p>
+                    <p>讲师</p>
+                    <p>硕士研究生</p>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>智慧教学云平台业务咨询请联系工程师.客户服务QQ群： 812036571</p>
+        <p>
+          服务微信公众号：得实e学，客服电话：0755-26695096-807,0755-26695096-811
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

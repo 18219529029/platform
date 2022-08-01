@@ -1,0 +1,508 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f7fb;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.red {
+  color: red;
+}
+.right-text span {
+  color: #fff;
+}
+#header-tobar .tobar {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+  min-height: 50px;
+  background-color: #ec1525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tobar .right .el-button {
+  color: #fefcfb;
+  font-family: \7b49\7ebf;
+}
+.button-text {
+  background: 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-color: transparent;
+}
+.el-button > span {
+  display: inline-flex;
+  align-items: center;
+}
+.header-nav {
+  margin-top: 50px;
+}
+.header-nav .banner {
+  width: 100%;
+}
+.item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  color: #303133;
+  cursor: pointer;
+}
+
+.item:active,
+.item:hover {
+  background-color: #f5f5f5;
+}
+
+.header-nav .nav-box-web {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+/* 导航 */
+.nav-box {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.nav-box ul {
+  font-size: 0;
+}
+.nav-box li {
+  font-size: 16px;
+  line-height: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+/* 导航搜索 */
+.is-active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.el-input__suffix-inner svg {
+  width: 12px;
+  color: red;
+}
+.el-input__inner {
+  width: 100%;
+  flex-grow: 1;
+  -webkit-appearance: none;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  background: 0 0;
+}
+.el-input__inner::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc;
+}
+.el-input__inner:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+.el-input__inner::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+}
+.el-input__inner:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: white;
+}
+.el-wrapper {
+  width: 250px;
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0 11px;
+  border-radius: 4px;
+  background-image: none;
+  box-shadow: 0 0 0 1px #dcdfe6 inset;
+}
+.el-wrapper:hover {
+  box-shadow: 0 0 0 1px red inset;
+}
+/* 内容部分 */
+/* 课程简介 */
+.course-introduction {
+  width: 85%;
+  margin: 30px auto 10px;
+  border-radius: 20px;
+}
+.el-card {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 12px;
+}
+.card-header {
+  padding: 20px 20px;
+}
+.card-body {
+  display: flex;
+  width: 100%;
+  padding: 0 0 20px 0;
+  justify-content: space-around;
+}
+.card-header {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  font-family: \9ed1\4f53;
+  font-size: 20px;
+}
+.title {
+  font-family: \9ed1\4f53;
+  font-size: 20px;
+}
+.title span {
+  vertical-align: super;
+}
+.main-content {
+  width: 57%;
+  text-align: justify;
+  line-height: 30px;
+}
+.main-content p {
+  text-indent: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: \7b49\7ebf;
+}
+
+.card-body img {
+  height: 210px;
+  width: 25%;
+  position: relative;
+  top: -30px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/* 课程内容 */
+.course-content {
+  width: 60%;
+  /* margin: 30px auto 10px; */
+  border-radius: 20px;
+}
+.title-line {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.left-main {
+  width: 100%;
+}
+.left-card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.left-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.ul-title {
+  width: 200px;
+  margin-left: -20px;
+}
+
+.left-box ul {
+  width: 320px;
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left-box li {
+  margin-left: 25px;
+}
+.left-box li:hover {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.left-box li {
+  color: red;
+  font-size: 25px;
+  height: 40px;
+}
+.left-box li span {
+  color: rgb(151, 151, 151);
+  font-size: 16px;
+}
+.left-card-body img {
+  width: 25%;
+  height: 120px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.left-card-body img:hover {
+  width: 26%;
+  height: 120px;
+  transform: scale(1.2);
+}
+hr {
+  background-color: #ccc;
+  height: 1px;
+  border: none;
+}
+.main {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: space-evenly;
+}
+/* 授课教师 */
+.right {
+  width: 25%;
+}
+.teacher {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.teacher-box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border: 0.5px solid;
+}
+.content {
+  width: 55%;
+}
+.content p {
+  line-height: 15px;
+}
+.pd0 {
+  padding: 0;
+  padding-bottom: 20px;
+}
+.teacher-box img {
+  width: 110px;
+  height: 110px;
+  top: 0;
+}
+
+/*  */
+.course {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.course-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.course-card-body img {
+  width: 90px;
+  height: 50px;
+  border-radius: 7px;
+}
+.course-card-body p {
+  padding: 0;
+  margin: 0;
+}
+.card-main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+svg {
+  width: 30px;
+}
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ec1525;
+  height: 50px;
+  color: #fff;
+  font-family: \7b49\7ebf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+@media screen and (min-width: 1420px) {
+  .app-moblie-input,
+  .nav-footer-mobile,
+  .app-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .right-text {
+    display: none;
+  }
+  .app-moblie-input {
+    width: 80%;
+    display: inline-flex;
+
+    line-height: 32px;
+  }
+  .app-moblie-input input {
+    font-family: \7b49\7ebf;
+    font-size: 0.9rem;
+  }
+  .nav-input {
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0 11px;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px #dcdfe6, #dcdfe6 inset;
+  }
+  .el-input__icon {
+    color: #ec1525;
+    height: 1em;
+    width: 1em;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-footer-mobile {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 50px;
+    align-items: center;
+  }
+  .el-menu-item-own {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+  }
+  .icon {
+    width: 25px;
+  }
+  .el-menu-item-own img,
+  .el-menu-item-own div {
+    margin: 0 auto 5px;
+  }
+  .el-menu-item-own img {
+    margin-top: 15px;
+  }
+  .el-menu-item-own div {
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+  }
+  .nav-box,
+  .app-web,
+  .footer {
+    display: none;
+  }
+  /*  */
+  /* 设置外层wrapper宽高、背景验证、水平居中、相对定位 */
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* 设置内层div相对于父级绝对定位，默认隐藏 */
+  .wrapper .div-main {
+    display: none;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+
+  /* 设置label宽高、行内块、文本居中、行高、字体大小、字体颜色 */
+  label {
+    height: 50px;
+    padding: 2px 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    /* color: white; */
+  }
+
+  /* 默认所有radio隐藏 */
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* 被选中的radio下的label下的div显示 */
+  input[type="radio"]:checked + label + div {
+    display: block;
+  }
+
+  /* 被选中的radio下的label背景颜色改为红色 */
+  input[type="radio"]:checked + label {
+    /* background-color: red; */
+    color: red;
+    cursor: pointer;
+    border-bottom: 2px solid red;
+    background-color: rgba(204, 204, 204, 0.2);
+  }
+  div p,
+  .title {
+    font-family: \6977\4f53;
+    text-align: left;
+    width: 90%;
+    margin: 20px auto;
+    text-indent: 1.5em;
+  }
+  .left-box {
+    display: block;
+  }
+  .left-main div .left-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .course-content {
+    border: none;
+    border-radius: 0px;
+  }
+  .teacher-box {
+    height: 120px;
+  }
+  .teacher-box img {
+    height: 120px;
+  }
+  .content p {
+    text-align: left;
+    font-family: \7b49\7ebf;
+  }
+}
